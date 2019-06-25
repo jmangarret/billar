@@ -1,0 +1,43 @@
+<div id="modalkaraokesearch" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg"  style="overflow-y:scroll; max-height:80%; ">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header bg-primary">
+        <button type="button" class="close" data-dismiss="modal">X</button>
+        <h4 class="modal-title">Buscador de Karaoke</h4>
+        <div class="alert alert-info" style="display:none">
+            <strong>Exito!</strong> Se ha agregado su pedido a la cola.
+        </div>
+      </div>
+      <div class="modal-body">
+
+	    <div class="col-md-12">
+	        <form action="#" class="formkaraoke form-group">
+            <div><br></div>
+            <div>
+              <h3>
+              <label for="">Buscar Karaoke: &nbsp;</label><input type="radio" name="tipo" value="Karaoke" checked>
+              <label for="">Video:   &nbsp;</label><input type="radio" name="tipo" value="Video" >
+	           </h3>
+           </div>
+           <div>
+            <input type="search" id="q" name="q" placeholder="Buscar video..." autocomplete="off" class="form-control">
+            <input type="hidden" id="maxResults" name="maxResults" value="5">
+          </div>
+          <div>
+            <p><br></p>
+            <input type="submit" value="Buscar" class="form-control btn btn-primary w100">
+          </div>
+	        </form>
+	        <div id="results"></div>
+	    </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+

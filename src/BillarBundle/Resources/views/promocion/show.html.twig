@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Promocion</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ promocion.id }}</td>
+            </tr>
+            <tr>
+                <th>Producto</th>
+                <td>{{ promocion.producto.nombre }}</td>
+            </tr>
+            <tr>
+                <th>Fecha Creacion</th>
+                <td>{% if promocion.fechaCreacion %}{{ promocion.fechaCreacion|date('d-m-Y') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Hora Desde</th>
+                <td>{{ promocion.horaDesde }}</td>
+            </tr>
+            <tr>
+                <th>Hora Hasta</th>
+                <td>{{ promocion.horaHasta }}</td>
+            </tr>
+            <tr>
+                <th>Valor Venta</th>
+                <td>{{ promocion.valorVenta }}</td>
+            </tr>
+            <tr>
+                <th>Status</th>
+                <td>{{(promocion.status==1 ? 'Activa' : 'Inactiva')}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <input type="button" value="Editar" class="btn btn-primary" onclick="location.href='{{ path('promocion_edit', { 'id': promocion.id }) }}'">
+    <input type="button" value="Cancelar" class="btn btn-danger" onclick="location.href='{{ path('promocion_index') }}'">
+
+{% endblock %}

@@ -1,0 +1,59 @@
+cuenta_index:
+    path:     /
+    defaults: { _controller: "BillarBundle:Cuenta:index" }
+    methods:  GET
+
+cuenta_show:
+    path:     /{id}/show
+    defaults: { _controller: "BillarBundle:Cuenta:show" }
+    methods:  GET
+
+cuenta_mesa:
+    path:     /mesa/{id}
+    defaults: { _controller: "BillarBundle:Cuenta:mesa" }
+    methods:  GET
+
+cuenta_gettimemesa:
+    path:     /getTimeMesa/{id}
+    defaults: { _controller: "BillarBundle:Cuenta:getTimeMesa" }
+    methods:  [GET, POST]
+
+cuenta_getdatosmesa:
+    path:     /getDatosMesa/{id}
+    defaults: { _controller: "BillarBundle:Cuenta:getDatosMesa" }
+    methods:  [GET, POST]
+
+cuenta_pasarcuenta:
+    path:     /pasarCuenta/{id}
+    defaults: { _controller: "BillarBundle:Cuenta:pasarCuenta" }
+    methods:  [POST]
+
+cuenta_addproducto:
+    path:     /addProducto/
+    defaults: { _controller: "BillarBundle:Cuenta:addProducto" }
+    methods:  POST
+
+cuenta_close:
+    path:     /close/{id}
+    defaults: { _controller: "BillarBundle:Cuenta:close" }
+    methods:  POST
+
+cuenta_imprimir:
+    path:     /imprimir/{id}
+    defaults: { _controller: "BillarBundle:Cuenta:imprimir" }
+    methods:  [GET, POST]
+
+cuenta_new:
+    path:     /new
+    defaults: { _controller: "BillarBundle:Cuenta:new" }
+    methods:  [GET, POST]
+
+cuenta_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BillarBundle:Cuenta:edit" }
+    methods:  [GET, POST]
+
+cuenta_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "BillarBundle:Cuenta:delete" }
+    methods:  DELETE

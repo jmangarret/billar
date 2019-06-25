@@ -1,0 +1,29 @@
+<h1>Detalle</h1>
+{% set total = 0 %}
+<table class="table">
+    <thead>
+        <tr>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for d in detalle %}
+        <tr>
+            <td>{{ d.producto.nombre }}</td>
+            <td>{{ d.cantidad |number_format(2, '.',',') }}</td>
+            <td>{{ d.precio |number_format(2, '.',',')}}</td>
+            <td>{{ (d.precio * d.cantidad) |number_format(2, '.',',') }}</td>
+           	{% set total = total + (d.precio * d.cantidad) %} 
+        </tr>
+    {% endfor %}
+    <tr>
+    	<td><b>Total</b></td>
+    	<td></td>
+    	<td></td>
+    	<td><b>{{ total |number_format(2, '.',',') }}</b></td>
+    </tr>
+    </tbody>
+</table>

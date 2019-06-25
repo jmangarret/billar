@@ -1,0 +1,515 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pla",
+				"playlists"
+			],
+			[
+				"for",
+				"foreach\tforeach …"
+			],
+			[
+				"title",
+				"title2"
+			],
+			[
+				"cl",
+				"client"
+			],
+			[
+				"red",
+				"redirect_uri"
+			],
+			[
+				"re",
+				"redirect_uri"
+			],
+			[
+				"sta",
+				"static"
+			],
+			[
+				"html",
+				"htmlBody"
+			],
+			[
+				"n",
+				"name\tAttr"
+			],
+			[
+				"arra",
+				"array"
+			],
+			[
+				"incl",
+				"include"
+			],
+			[
+				"tipo",
+				"tipoProducto"
+			],
+			[
+				"id",
+				"idproducto"
+			],
+			[
+				"tot",
+				"totalHoras"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"prec",
+				"precioActual"
+			],
+			[
+				"pa",
+				"playlist"
+			],
+			[
+				"au",
+				"auth_url"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"t",
+				"title"
+			],
+			[
+				"s",
+				"snippet"
+			],
+			[
+				"FORM",
+				"form"
+			],
+			[
+				"op",
+				"option\tTag"
+			],
+			[
+				"li",
+				"link\tTag"
+			],
+			[
+				"vi",
+				"view"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 170.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 412.0
+	},
+	"console":
+	{
+		"height": 241.0,
+		"history":
+		[
+			"composer require google/apiclient:^2.0",
+			"clear"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/xampp/htdocs/project-billar",
+		"/C/xampp/htdocs/project-billar/app",
+		"/C/xampp/htdocs/project-billar/src",
+		"/C/xampp/htdocs/project-billar/src/BillarBundle",
+		"/C/xampp/htdocs/project-billar/src/BillarBundle/Resources",
+		"/C/xampp/htdocs/project-billar/src/BillarBundle/Resources/config",
+		"/C/xampp/htdocs/project-billar/src/BillarBundle/Resources/views",
+		"/C/xampp/htdocs/project-billar/src/BillarBundle/Resources/views/Default",
+		"/C/xampp/htdocs/project-billar/src/BillarBundle/Resources/views/youtube",
+		"/C/xampp/htdocs/project-billar/web",
+		"/C/xampp/htdocs/project-billar/web/gapi",
+		"/C/xampp/htdocs/project-billar/web/js"
+	],
+	"file_history":
+	[
+		"/C/xampp/htdocs/project-billar/web/js/ajaxgapi.js",
+		"/C/xampp/htdocs/project-billar/src/BillarBundle/Resources/views/youtube/search.html.php",
+		"/C/xampp/htdocs/project-billar/src/BillarBundle/Resources/views/youtube/list.html.php",
+		"/C/xampp/htdocs/project-billar/src/BillarBundle/Resources/views/youtube/oauth2callback.html.php",
+		"/C/xampp/htdocs/project-billar/src/BillarBundle/Resources/views/Default/karaokeSearch.html.twig",
+		"/C/xampp/htdocs/project-billar/src/BillarBundle/Resources/views/youtube/addvideo.html.php",
+		"/C/xampp/htdocs/project-billar/src/BillarBundle/Resources/views/youtube/insert.html.php",
+		"/C/xampp/htdocs/project-billar/web/gapi/Google/Service/YouTube/Resource/Playlists.php",
+		"/C/xampp/htdocs/project-billar/web/gapi/Google/Service/YouTube/Resource/PlaylistItems.php",
+		"/C/xampp/htdocs/project-billar/src/BillarBundle/Resources/config/routing.yml",
+		"/C/xampp/htdocs/project-billar/src/BillarBundle/Controller/KaraokeController.php",
+		"/C/xampp/htdocs/project-billar/web/gapi/gapi.inc.php",
+		"/C/xampp/htdocs/project-billar/src/BillarBundle/Resources/views/Default/modalkaraokesearch.html.twig",
+		"/C/xampp/htdocs/project-billar/web/gapi/list.php",
+		"/C/xampp/htdocs/project-billar/web/gapi/Google/Client.php",
+		"/C/xampp/htdocs/project-billar/web/gapi/oauth2callback.php",
+		"/C/xampp/htdocs/tiempo.php",
+		"/C/xampp/htdocs/project-billar/web/js/appyoutube.js",
+		"/C/xampp/htdocs/project-billar/web/gapi/addvideo.php",
+		"/C/xampp/htdocs/project-billar/web/gapi/insert.php",
+		"/C/xampp/htdocs/project-billar/web/gapi/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php",
+		"/C/xampp/htdocs/project-billar/src/BillarBundle/Resources/views/youtube/search.php",
+		"/C/xampp/htdocs/project-billar/web/gapi/search.php",
+		"/C/xampp/htdocs/project-billar/src/BillarBundle/Resources/views/Default/karaokeIndex.html.twig",
+		"/C/xampp/htdocs/project-billar/src/BillarBundle/Repository/CuentaRepository.php",
+		"/C/xampp/htdocs/project-billar/vendor/doctrine/orm/lib/Doctrine/ORM/EntityRepository.php",
+		"/C/xampp/htdocs/gapi/php/insert.php",
+		"/C/xampp/htdocs/gapi/php/list.php",
+		"/C/xampp/htdocs/gapi/php/search.php",
+		"/C/xampp/htdocs/gapi/php/addvideo.php",
+		"/C/xampp/htdocs/project-billar/web/css/estilos.css",
+		"/C/xampp/htdocs/gapi/php/oauth2callback.php",
+		"/C/xampp/htdocs/gapi/php/gapi.inc.php",
+		"/C/xampp/htdocs/project-billar/web/js/billar.js",
+		"/C/xampp/htdocs/project-billar/vendor/autoload.php",
+		"/C/xampp/htdocs/gapi/php/vendor/autoload.php",
+		"/C/Users/USER/Desktop/Apps/osticket1.10/upload/scp/tasks.php",
+		"/C/Users/USER/Desktop/Apps/osticket1.10/upload/scp/ajax.php",
+		"/C/Users/USER/Desktop/Apps/osticket1.10/upload/include/ajax.tasks.php",
+		"/C/Users/USER/Desktop/Apps/osticket1.10/upload/include/staff/templates/task-preview.tmpl.php",
+		"/C/xampp/htdocs/gapi/php/index.php",
+		"/C/xampp/htdocs/project-billar/src/BillarBundle/Controller/CuentaController.php",
+		"/C/xampp/htdocs/project-billar/src/BillarBundle/Resources/views/cuenta/imprimir.html.php",
+		"/C/xampp/htdocs/project-billar/src/BillarBundle/Entity/CuentaDetalle.php",
+		"/C/xampp/htdocs/java/Mi_Clase_1.java",
+		"/C/xampp/htdocs/gapi/drive/index.html",
+		"/C/xampp/htdocs/gapi/php/playList.php",
+		"/C/xampp/htdocs/gapi/php/Google/Client.php",
+		"/C/xampp/htdocs/gapi/php/Google/Service/YouTube.php",
+		"/C/xampp/htdocs/gapi/php/vendor/simple-query.php",
+		"/C/xampp/htdocs/gapi/php/vendor/examples/index.php",
+		"/C/xampp/htdocs/gapi/php/vendor/examples/simple-query.php",
+		"/C/xampp/htdocs/gapi/php/examples/index.php",
+		"/C/xampp/htdocs/gapi/php/vendor/google/apiclient/examples/idtoken.php",
+		"/C/xampp/htdocs/gapi/php/examples/batch.php",
+		"/C/xampp/htdocs/gapi/php/examples/idtoken.php",
+		"/C/xampp/htdocs/gapi/php/examples/templates/base.php",
+		"/C/xampp/htdocs/gapi/php/Google/Service/Resource.php",
+		"/C/xampp/htdocs/project-billar/src/BillarBundle/Controller/DefaultController.php",
+		"/C/xampp/htdocs/gapi/php/client_secret.json",
+		"/C/xampp/htdocs/project-billar/web/js/ytplaylist.js",
+		"/C/xampp/htdocs/gapi/php/vendor/google/apiclient-services/src/Google/Service/YouTube/Playlist.php",
+		"/C/xampp/htdocs/google-api-php-client/my_uploads.php",
+		"/C/xampp/htdocs/google-api-php-client/examples/youtube/my_uploads.php",
+		"/C/xampp/htdocs/gapi/php/vendor/google/apiclient/src/Google/Service.php",
+		"/C/xampp/htdocs/gapi/php/vendor/google/apiclient-services/src/Google/Service/ServiceManagement/Service.php",
+		"/C/xampp/htdocs/project-billar/vendor/symfony/symfony/src/Symfony/Bridge/Doctrine/Tests/Fixtures/User.php",
+		"/C/xampp/htdocs/project-billar/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Token/TokenInterface.php",
+		"/C/xampp/htdocs/project-billar/vendor/symfony/symfony/src/Symfony/Component/Security/Core/User/InMemoryUserProvider.php",
+		"/C/xampp/htdocs/project-billar/vendor/symfony/symfony/src/Symfony/Component/Security/Core/User/UserInterface.php",
+		"/C/xampp/htdocs/project-billar/vendor/symfony/symfony/src/Symfony/Component/Security/Core/User/User.php",
+		"/C/xampp/htdocs/project-billar/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Role/Role.php",
+		"/C/xampp/htdocs/youtube/playlist_updates.js",
+		"/C/xampp/htdocs/api-yt/index.html",
+		"/C/xampp/htdocs/youtube/playlist_updates.html",
+		"/C/xampp/htdocs/project-billar/src/BillarBundle/Controller/UsuarioController.php",
+		"/C/xampp/htdocs/project-billar/src/BillarBundle/Entity/Usuario.php",
+		"/C/xampp/htdocs/project-billar/src/BillarBundle/Entity/Cuenta.php",
+		"/C/xampp/htdocs/project-billar/src/BillarBundle/Entity/Promocion.php",
+		"/C/xampp/htdocs/project-billar/src/BillarBundle/Controller/ProductoController.php",
+		"/C/xampp/htdocs/project-billar/src/BillarBundle/Resources/views/Default/modalcuentanew.html.twig",
+		"/C/xampp/htdocs/project-billar/src/BillarBundle/Resources/views/promocion/index.html.twig",
+		"/C/xampp/htdocs/project-billar/src/BillarBundle/Resources/views/promocion/show.html.twig",
+		"/C/xampp/htdocs/project-billar/src/BillarBundle/Resources/views/cuenta/show.html.twig",
+		"/C/xampp/htdocs/project-billar/src/BillarBundle/Resources/views/cuenta/index.html.twig",
+		"/C/xampp/htdocs/project-billar/src/BillarBundle/Resources/views/cuenta/detalle.html.twig",
+		"/C/xampp/htdocs/project-billar/src/BillarBundle/Form/CuentaDetalleType.php",
+		"/C/xampp/htdocs/project-billar/src/BillarBundle/Form/CuentaType.php",
+		"/C/xampp/htdocs/project-billar/src/BillarBundle/Form/PromocionType.php",
+		"/C/xampp/htdocs/project-billar/src/BillarBundle/Controller/PromocionController.php",
+		"/C/xampp/htdocs/project-billar/src/BillarBundle/Entity/Mesa.php",
+		"/C/xampp/htdocs/project-billar/src/BillarBundle/Resources/views/usuario/new.html.twig",
+		"/C/xampp/htdocs/project-billar/src/BillarBundle/Resources/views/usuario/edit.html.twig",
+		"/C/xampp/htdocs/project-billar/src/BillarBundle/Resources/views/usuario/form.html.twig",
+		"/C/xampp/htdocs/project-billar/src/BillarBundle/Resources/views/usuario/index.html.twig",
+		"/C/xampp/htdocs/project-billar/app/Resources/views/base.html.twig",
+		"/C/Users/END USER/Downloads/Manga/placetoplay-master/application/views/transaction/index.php",
+		"/C/xampp/htdocs/project-billar/src/BillarBundle/Resources/views/usuario/form.html",
+		"/C/xampp/htdocs/project-billar/src/BillarBundle/Resources/views/usuario/show.html.twig",
+		"/C/Users/END USER/Desktop/NEWBET/install symfony3.txt",
+		"/C/xampp/htdocs/project-billar/app/Resources/views/usuario/index.html.twig",
+		"/C/xampp/htdocs/project-billar/src/BillarBundle/Resources/views/Default/index.html.twig",
+		"/C/xampp/htdocs/project-billar/app/config/routing.yml",
+		"/C/xampp/htdocs/billar/lib/conexion.php",
+		"/C/xampp/htdocs/billar/index.php",
+		"/C/xampp/htdocs/project-billar/app/config/parameters.yml",
+		"/C/Users/END USER/Downloads/producto.sql",
+		"/C/xampp/htdocs/placetoplay/application/config/routes.php",
+		"/C/xampp/htdocs/placetoplay/application/controllers/transaction.php",
+		"/C/xampp/htdocs/placetoplay/application/views/transaction/index.php",
+		"/C/xampp/htdocs/billar/css/estilos.css",
+		"/C/xampp/htdocs/CodeIgniter2/application/controllers/pages.php",
+		"/C/xampp/htdocs/CodeIgniter2/application/controllers/news.php",
+		"/C/xampp/htdocs/CodeIgniter2/application/views/templates/header.php",
+		"/C/xampp/htdocs/CodeIgniter2/application/views/pages/home.php",
+		"/C/xampp/htdocs/billar/billar.sql",
+		"/C/xampp/htdocs/CodeIgniter2/application/views/pages/about.php",
+		"/C/xampp/htdocs/CodeIgniter2/application/views/templates/footer.php",
+		"/C/xampp/htdocs/CodeIgniter2/application/views/news/index.php",
+		"/C/xampp/htdocs/CodeIgniter2/application/config/constants.php",
+		"/C/xampp/htdocs/CodeIgniter2/application/config/config.php",
+		"/C/xampp/htdocs/CodeIgniter2/application/config/database.php",
+		"/C/xampp/htdocs/CodeIgniter2/application/models/news_model.php",
+		"/C/xampp/htdocs/CodeIgniter2/application/views/news/view.php",
+		"/C/xampp/htdocs/CodeIgniter2/application/config/routes.php",
+		"/C/xampp/htdocs/tuag24/bd/ost_file_chunk.min.sql",
+		"/C/xampp/htdocs/vhosts/ostickets/upload/include/ost-config.php",
+		"/C/xampp/htdocs/vhosts/crmTuAgencia24/config.inc.php"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"htmlBody",
+			"contenido",
+			"add",
+			"esHora",
+			"promo",
+			"esHora",
+			"addProductoTiempo",
+			"updateT",
+			"getT",
+			"nuevo_precio",
+			"updateT",
+			"valPro",
+			"playlistid",
+			"$playlistId",
+			"error",
+			"ajax",
+			"channel",
+			"require_once",
+			"channels",
+			"listChannels",
+			"drive",
+			"createPlaylist",
+			"billarbundle",
+			"idCliente",
+			"addCuenta",
+			"setMesa",
+			"roducto",
+			"producto",
+			"findByIdMesa",
+			"findByIdCuenta",
+			"IdProducto",
+			"idCuenta",
+			"idMesa",
+			"getProducto",
+			"getproducto",
+			"setproducto",
+			"idProducto",
+			"getIdMesa",
+			"setIdMesa",
+			"Mesa",
+			"getcuenta",
+			"setIdCuenta",
+			"setIdProducto",
+			"getIdProducto",
+			"getproducto",
+			"setproducto",
+			"idProducto",
+			"setcuenta",
+			"getcuenta",
+			"getIdCuenta",
+			"idCuenta",
+			"setIdCliente",
+			"getIdCliente",
+			"setIdUsuario",
+			"getIdUsuario",
+			"setUsuario",
+			"getusuario",
+			"IdUsuario",
+			"liente",
+			"setcliente",
+			"getcliente",
+			"idCliente",
+			"IdCliente",
+			"getIdMesa",
+			">",
+			"cre"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"htmlList",
+			"existeProductoTiempo",
+			"nuevoPrecio",
+			"playlist",
+			"include",
+			"findByCuenta",
+			"Producto",
+			"cuenta",
+			"mesa",
+			"getProducto",
+			"sgetProducto",
+			"setProducto",
+			"producto",
+			"getMesa",
+			"setMesa",
+			"getCuenta",
+			"setCuenta",
+			"setProducto",
+			"getProducto",
+			"setProducto",
+			"Producto",
+			"setCuenta",
+			"getCuenta",
+			"cuenta",
+			"setCliente",
+			"getCliente",
+			"setUsuario",
+			"getUsuario",
+			"setUsuario",
+			"getUsuario",
+			"usuario",
+			"setCliente",
+			"getCliente",
+			"cliente",
+			"getMesa"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "symfony-project.sublime-project",
+	"replace":
+	{
+		"height": 72.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 241.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

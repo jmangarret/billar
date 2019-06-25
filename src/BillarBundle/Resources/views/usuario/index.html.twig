@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <h1>Usuarios Lista</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>role</th>
+                <th>Telefono</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for usuario in usuarios %}
+            <tr>
+                <td><a href="{{ path('usuario_show', { 'id': usuario.id }) }}">{{ usuario.id }}</a></td>
+                <td>{{ usuario.nombre }}</td>
+                <td>{{ usuario.role }}</td>
+                <td>{{ usuario.telefono }}</td>
+                <td>{{(usuario.status==1 ? 'Activo' : 'Inactivo')}}</td>
+                <td>
+                <button class="btn btn-info" onclick="location.href='{{ path('usuario_show', { 'id': usuario.id }) }}'">
+                    <i class="glyphicon glyphicon-eye-open"></i>
+                </button>
+                <button class="btn btn-danger" onclick="location.href='{{ path('usuario_edit', { 'id': usuario.id }) }}'">
+                    <i class="glyphicon glyphicon-pencil"></i>
+                </button>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <button class="btn btn-primary" onclick="location.href='{{ path('usuario_new') }}'">
+        Crear usuario
+    </button>
+
+{% endblock %}
+
+

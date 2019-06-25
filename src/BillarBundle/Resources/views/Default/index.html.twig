@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    {{ parent() }}
+
+	<div class="contenedor">
+		<div class="billar-pool">
+			{% for mesa in mesasbillar %}
+				<div class="me-bp" id="mesa-{{mesa.id}}" data-numero="{{mesa.id}}">
+					<span class="label label-primary">{{mesa.id}}</span>
+				</div>		    	
+			{% endfor %}     
+		</div>
+	</div>
+	<div id="contenido">
+		
+	</div>
+	{% set vars1 = {'productos': productos} %}
+    {% include 'BillarBundle:Default:modalproducto.html.twig' with vars1 %}
+    {% include 'BillarBundle:Default:modalgalleryprod.html.twig' with vars1 %}
+	
+	{% set vars2 = {'cuenta': cuenta, 'formCuenta': formCuenta, 'mesas': mesasbillar} %}
+    {% include 'BillarBundle:Default:modalcuentanew.html.twig' with vars2 %}
+    {% include 'BillarBundle:Default:modalpasarcuenta.html.twig' with vars2 %}
+
+	{% set vars3 = {'cliente': cliente, 'formCliente': formCliente} %}
+    {% include 'BillarBundle:Default:modalclientenew.html.twig' with vars3 %}
+
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script type="text/javascript" src="{{ asset('js/billar.js') }}"></script>
+    <script type="text/javascript">
+		{% for mesa in mesasocupadas %}
+		    $('#mesa-{{mesa.id}}').addClass('mesa-ocupada');
+		{% endfor %}     
+	</script>
+{% endblock %}

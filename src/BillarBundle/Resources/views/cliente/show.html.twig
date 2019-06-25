@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+{% set strTipoDocumento = "" %}
+{% if cliente.tipoDocumento=="CC" %}
+    {% set strTipoDocumento = "Cedula de Ciudadania" %}
+{% elseif cliente.tipoDocumento=="CE" %}
+    {% set strTipoDocumento = "Cedula de Extranjeria" %}
+{% elseif cliente.tipoDocumento=="PP" %}
+    {% set strTipoDocumento = "Pasaporte" %}
+{% elseif cliente.tipoDocumento=="RN" %}
+    {% set strTipoDocumento = "RUT/NIT" %}
+{% else %}
+    {% set strTipoDocumento = "Cedula de Ciudadania" %}
+{% endif %}
+
+    <h1>Cliente</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ cliente.id }}</td>
+            </tr>
+            <tr>
+                <th>Tipo Documento</th>
+                <td>{{ strTipoDocumento }}</td>
+            </tr>
+            <tr>
+                <th>Documento</th>
+                <td>{{ cliente.documento }}</td>
+            </tr>
+            <tr>
+                <th>Nombre</th>
+                <td>{{ cliente.nombre }}</td>
+            </tr>
+            <tr>
+                <th>Direccion</th>
+                <td>{{ cliente.direccion }}</td>
+            </tr>
+            <tr>
+                <th>Telefono</th>
+                <td>{{ cliente.telefono }}</td>
+            </tr>
+            <tr>
+                <th>Status</th>
+                <td>{{(cliente.status==1 ? 'Activo' : 'Inactivo')}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <input type="button" value="Editar" class="btn btn-primary" onclick="location.href='{{ path('cliente_edit', { 'id': cliente.id }) }}'">
+    <input type="button" value="Cancelar" class="btn btn-danger" onclick="location.href='{{ path('cliente_index') }}'">
+{% endblock %}

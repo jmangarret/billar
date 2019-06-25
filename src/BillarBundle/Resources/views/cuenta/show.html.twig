@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Cuenta</h1>
+
+    <table class="table">
+        <tbody>
+            <tr >
+                <th>Id</th>
+                <td>{{ Cuenta.id }}</td>
+            </tr>
+            <tr>
+                <th>Mesa</th>
+                <td>{{ Cuenta.mesa.nombre }}</td>
+            </tr>
+            <tr>
+                <th>Cliente</th>
+                <td>{{ Cuenta.cliente.nombre }}</td>
+            </tr>
+            <tr>
+                <th>Usuario</th>
+                <td>{{ Cuenta.usuario.nombre }}</td>
+            </tr>
+            <tr>
+                <th>Fecha Creacion</th>
+                <td>{% if Cuenta.fechaCreacion %}{{ Cuenta.fechaCreacion|date('d-m-Y H:i:s') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Fecha Actualizacion</th>
+                <td>{% if Cuenta.fechaActualizacion %}{{ Cuenta.fechaActualizacion|date('d-m-Y H:i:s') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Fecha Cierre</th>
+                <td>{% if Cuenta.fechaCierre %}{{ Cuenta.fechaCierre|date('d-m-Y H:i:s') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Status</th>
+                <td>{{ (Cuenta.status==1 ? 'Abierta' : 'Cerrada') }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <input type="button" value="Editar" class="btn btn-primary" onclick="location.href='{{ path('cuenta_edit', { 'id': Cuenta.id }) }}'">
+    <input type="button" value="Cancelar" class="btn btn-danger" onclick="location.href='{{ path('cuenta_index') }}'">
+
+    {% include 'BillarBundle:cuenta:detalle.html.twig' with {'detalle': detalle} %}
+
+{% endblock %}

@@ -1,0 +1,47 @@
+<div id="modalpasarcuenta" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg"  style="max-height:80%; ">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header bg-primary">
+        <button type="button" class="close" data-dismiss="modal">X</button>
+        <h4 class="modal-title">Pasar Cuenta a otra Mesa</h4>
+        <div class="alert alert-info" style="display:none">
+            <strong>Exito!</strong> Se ha transferido la cuenta.
+        </div>
+      </div>
+      <div class="modal-body">
+          <div class="row">
+              <div class="col-lg-12 col-md-12 col-xs-12">
+                <form action="" method="POST" id="formPasarCuenta">
+	                <div>
+                    	<label for="cuenta">Cuenta</label>
+                    	<input type="text" name="cuenta" readonly="readonly" value="" class="form-control">
+                  	</div>
+                  	<div>
+                    	<label for="mesaactual">Mesa Actual</label>
+                    	<input type="text" name="mesaactual" readonly="readonly" value="" class="form-control">
+                  	</div>
+                  	<div>
+                  		<label for="mesa">Nueva Mesa</label>
+	                  	<select name="idmesa" id="" class="form-control" required="required">
+	                    <option value="">--Seleccione--</option>
+	                      {% for m in mesas %}
+	                      <option value="{{m.id}}">{{m.nombre}}</option>          
+	                      {% endfor %}
+	                  	</select>
+                  	</div>
+                  	<div class="buttons">
+                		<input type="submit" value="Enviar" class="btn btn-primary" />
+                		<input name="idcuenta" type="hidden">
+                  	</div>
+                </form>
+              </div>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>

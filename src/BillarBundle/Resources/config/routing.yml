@@ -1,0 +1,66 @@
+billar_cuenta:
+    resource: "@BillarBundle/Resources/config/routing/cuenta.yml"
+    prefix:   /cuenta
+
+billar_promocion:
+    resource: "@BillarBundle/Resources/config/routing/promocion.yml"
+    prefix:   /promocion
+
+billar_producto:
+    resource: "@BillarBundle/Resources/config/routing/producto.yml"
+    prefix:   /producto
+
+billar_cliente:
+    resource: "@BillarBundle/Resources/config/routing/cliente.yml"
+    prefix:   /cliente
+
+billar_mesa:
+    resource: "@BillarBundle/Resources/config/routing/mesa.yml"
+    prefix:   /mesa
+
+billar_usuario:
+    resource: "@BillarBundle/Resources/config/routing/usuario.yml"
+    prefix:   /usuario
+
+billar_homepage:
+    path:     /
+    defaults: { _controller: BillarBundle:Default:index }
+
+billar_welcome:
+    path:     /home
+    defaults: { _controller: BillarBundle:Default:home }
+
+billar_karaoke_list:
+    path:     /karaokelist
+    defaults: { _controller: BillarBundle:Karaoke:list }
+
+billar_karaoke_search:
+    path:     /karaokesearch
+    defaults: { _controller: BillarBundle:Karaoke:search }
+
+billar_karaoke_searchresults:
+    path:     /searchresults
+    defaults: { _controller: BillarBundle:Karaoke:searchResults }
+
+
+billar_karaoke_addvideo:
+    path:     /karaokeaddvideo
+    defaults: { _controller: BillarBundle:Karaoke:addvideo }
+
+billar_karaoke_index:
+    path:     /karaokeindex
+    defaults: { _controller: BillarBundle:Karaoke:Index }
+
+login_youtube:
+    path:     /oauth2callback
+    defaults: { _controller: BillarBundle:Karaoke:oauth2callback }
+
+login:
+    path:     /login
+    defaults: { _controller: BillarBundle:Usuario:login }
+
+login_check:
+    path:     /login_check
+
+logout:
+    path:     /logout

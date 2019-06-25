@@ -1,0 +1,25 @@
+
+{% extends 'base.html.twig' %}
+
+{% block javascripts %}
+	code {{code}}
+    {{ parent() }}
+	<script>
+	/*
+	$.post('https://accounts.google.com/o/oauth2/token',{
+	$.post('https://www.googleapis.com/oauth2/v4/token',{
+		code 			: '{{code}}',
+		client_id 		: '816045738066-fettfcjjmfe6k5uimodsikjbpoi8igm0.apps.googleusercontent.com',
+		client_secret 	: '_G13MjZ02dn04tsdusf3WZUf',
+		redirect_uri 	: 'http://127.0.0.1:8000/oauth2youtube',
+		grant_type 		: 'authorization_code'
+	},'jsonp')
+	.done(function(response){
+		console.log('Done! '+response);
+	})
+	.fail(function(xhr, textStatus, error){
+		console.log('Error:'+error);
+	});
+		*/
+	</script>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Mesa Creacion</h1>
+
+    {{ form_start(form) }}
+        {{ form_widget(form) }}
+        <input type="submit" value="Crear" class="btn btn-primary" />
+        <input type="button" value="Cancelar" class="btn btn-danger" onclick="location.href='{{ path('mesa_index') }}'">
+    {{ form_end(form) }}
+
+{% endblock %}

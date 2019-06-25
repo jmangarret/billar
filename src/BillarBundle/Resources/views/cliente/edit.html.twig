@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Cliente Editar</h1>
+
+    {{ form_start(edit_form) }}
+        {{ form_widget(edit_form) }}
+        <input type="button" value="Editar" class="btn btn-primary" onclick="location.href='{{ path('cliente_edit', { 'id': cliente.id }) }}'">
+        <input type="button" value="Cancelar" class="btn btn-danger" onclick="location.href='{{ path('cliente_index') }}'">
+    {{ form_end(edit_form) }}
+
+{% endblock %}

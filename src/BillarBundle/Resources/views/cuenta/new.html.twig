@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Cuenta Creacion</h1>
+
+    {{ form_start(form) }}
+        {{ form_widget(form) }}
+        <input type="submit" value="Crear" class="btn btn-primary" />
+        <input type="button" value="Cancelar" class="btn btn-danger" onclick="location.href='{{ path('cuenta_index') }}'">
+    {{ form_end(form) }}
+
+{% endblock %}
+

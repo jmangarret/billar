@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+
+<div class="contenedor">
+	    <div class="col-md-12">
+	        <form action="#" class="formkaraoke form-group">
+            <div><br></div>
+            <div>
+              <h3>
+              <label for="">Buscar Karaoke: &nbsp;</label><input type="radio" name="tipo" value="Karaoke" checked>
+              <label for="">Video:   &nbsp;</label><input type="radio" name="tipo" value="Video" >
+	           </h3>
+           </div>
+           <div>
+            <input type="search" id="q" name="q" placeholder="Buscar video..." autocomplete="off" class="form-control">
+            <input type="hidden" id="maxResults" name="maxResults" value="5">
+          </div>
+          <div>
+            <p><br></p>
+            <input type="submit" value="Buscar" class="form-control btn btn-primary w100">
+          </div>
+	        </form>
+	        <div id="results"></div>
+	    </div>
+
+</div>
+<div id="contenido">
+	<ul>				
+		
+</div>
+
+        
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script type="text/javascript" src="{{ asset('js/ajaxgapi.js') }}"></script>
+{% endblock %}

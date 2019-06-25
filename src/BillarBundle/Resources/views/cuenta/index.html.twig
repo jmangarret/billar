@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Cuentas Lista</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Mesa</th>
+                <th>Cliente</th>
+                <th>Usuario</th>
+                <th>Fecha Creacion</th>
+                <th>Fecha Atualizacion</th>
+                <th>Fecha Cierre</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for cuenta in cuentas %}
+            <tr>
+                <td><a href="{{ path('cuenta_show', { 'id': cuenta.id }) }}">{{ cuenta.id }}</a></td>
+                <td>{{ cuenta.mesa.nombre }}</td>
+                <td>{{ cuenta.cliente.nombre }}</td>
+                <td>{{ cuenta.usuario.nombre }}</td>
+                <td>{% if cuenta.fechaCreacion %}{{ cuenta.fechaCreacion|date('d-m-Y H:i:s') }}{% endif %}</td>
+                <td>{% if cuenta.fechaActualizacion %}{{ cuenta.fechaActualizacion|date('d-m-Y H:i:s') }}{% endif %}</td>
+                <td>{% if cuenta.fechaCierre %}{{ cuenta.fechaCierre|date('d-m-Y H:i:s') }}{% endif %}</td>
+                <td>{{ (cuenta.status==1 ? 'Abierta' : 'Cerrada') }}</td>
+                <td>
+                <button class="btn btn-info" onclick="location.href='{{ path('cuenta_show', { 'id': cuenta.id }) }}'">
+                    <i class="glyphicon glyphicon-eye-open"></i>
+                </button>
+                <button class="btn btn-danger" onclick="location.href='{{ path('cuenta_edit', { 'id': cuenta.id }) }}'">
+                    <i class="glyphicon glyphicon-pencil"></i>
+                </button>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <button class="btn btn-primary" onclick="location.href='{{ path('cuenta_new') }}'">
+        Crear cuenta
+    </button>
+
+{% endblock %}

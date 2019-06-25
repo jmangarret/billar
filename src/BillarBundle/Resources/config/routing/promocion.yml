@@ -1,0 +1,24 @@
+promocion_index:
+    path:     /
+    defaults: { _controller: "BillarBundle:Promocion:index" }
+    methods:  GET
+
+promocion_show:
+    path:     /{id}/show
+    defaults: { _controller: "BillarBundle:Promocion:show" }
+    methods:  GET
+
+promocion_new:
+    path:     /new
+    defaults: { _controller: "BillarBundle:Promocion:new" }
+    methods:  [GET, POST]
+
+promocion_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BillarBundle:Promocion:edit" }
+    methods:  [GET, POST]
+
+promocion_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "BillarBundle:Promocion:delete" }
+    methods:  DELETE

@@ -1,0 +1,24 @@
+cliente_index:
+    path:     /
+    defaults: { _controller: "BillarBundle:Cliente:index" }
+    methods:  GET
+
+cliente_show:
+    path:     /{id}/show
+    defaults: { _controller: "BillarBundle:Cliente:show" }
+    methods:  GET
+
+cliente_new:
+    path:     /new
+    defaults: { _controller: "BillarBundle:Cliente:new" }
+    methods:  [GET, POST]
+
+cliente_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BillarBundle:Cliente:edit" }
+    methods:  [GET, POST]
+
+cliente_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "BillarBundle:Cliente:delete" }
+    methods:  DELETE

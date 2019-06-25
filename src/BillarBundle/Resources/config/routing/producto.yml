@@ -1,0 +1,24 @@
+producto_index:
+    path:     /
+    defaults: { _controller: "BillarBundle:Producto:index" }
+    methods:  GET
+
+producto_show:
+    path:     /{id}/show
+    defaults: { _controller: "BillarBundle:Producto:show" }
+    methods:  GET
+
+producto_new:
+    path:     /new
+    defaults: { _controller: "BillarBundle:Producto:new" }
+    methods:  [GET, POST]
+
+producto_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BillarBundle:Producto:edit" }
+    methods:  [GET, POST]
+
+producto_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "BillarBundle:Producto:delete" }
+    methods:  DELETE

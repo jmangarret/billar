@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Mesas Lista</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Tipo</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for mesa in mesas %}
+            <tr>
+                <td><a href="{{ path('mesa_show', { 'id': mesa.id }) }}">{{ mesa.id }}</a></td>
+                <td>{{ mesa.nombre }}</td>
+                <td>{{ mesa.tipo }}</td>
+                <td>{{ (mesa.status==0) ? 'Disponible' : 'Ocupada' }}</td>
+                <td>
+                <button class="btn btn-info" onclick="location.href='{{path('mesa_show',{'id': mesa.id })}}'">
+                    <i class="glyphicon glyphicon-eye-open"></i>
+                </button>
+                <button class="btn btn-danger" onclick="location.href='{{path('mesa_edit',{'id':mesa.id})}}'">
+                    <i class="glyphicon glyphicon-pencil"></i>
+                </button>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <button class="btn btn-primary" onclick="location.href='{{path('mesa_new')}}'">
+        Crear mesa
+    </button>
+{% endblock %}

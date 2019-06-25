@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Productos Lista</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Tipo</th>
+                <th>Valor compra</th>
+                <th>Valor venta</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for producto in productos %}
+            <tr>
+                <td><a href="{{ path('producto_show', { 'id': producto.id }) }}">{{ producto.id }}</a></td>
+                <td>{{ producto.nombre }}</td>
+                <td>{{ producto.tipoProducto }}</td>
+                <td>{{ producto.valorCompra }}</td>
+                <td>{{ producto.valorVenta }}</td>
+                <td>{{ (producto.status==1 ? 'Activo' : 'Inactivo') }}</td>
+                <td>
+                <button class="btn btn-info" onclick="location.href='{{ path('producto_show', { 'id': producto.id }) }}'">
+                    <i class="glyphicon glyphicon-eye-open"></i>
+                </button>
+                <button class="btn btn-danger" onclick="location.href='{{ path('producto_edit', { 'id': producto.id }) }}'">
+                    <i class="glyphicon glyphicon-pencil"></i>
+                </button>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <button class="btn btn-primary" onclick="location.href='{{ path('producto_new') }}'">
+        Crear producto
+    </button>
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Producto</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ producto.id }}</td>
+            </tr>
+            <tr>
+                <th>Nombre</th>
+                <td>{{ producto.nombre }}</td>
+            </tr>
+            <tr>
+                <th>Tipo de Producto</th>
+                <td>{{ producto.tipoProducto }}</td>
+            </tr>
+            <tr>
+                <th>Valor Compra</th>
+                <td>{{ producto.valorCompra }}</td>
+            </tr>
+            <tr>
+                <th>Valor Venta</th>
+                <td>{{ producto.valorVenta }}</td>
+            </tr>
+            <tr>
+                <th>Foto</th>
+                <td>{{ producto.foto }}</td>
+            </tr>
+            <tr>
+                <th>Status</th>
+                <td>{{(producto.status==1 ? 'Activo' : 'Inactivo')}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <input type="button" value="Editar" class="btn btn-primary" onclick="location.href='{{ path('producto_edit', { 'id': producto.id }) }}'">
+    <input type="button" value="Cancelar" class="btn btn-danger" onclick="location.href='{{ path('producto_index') }}'">
+    
+{% endblock %}

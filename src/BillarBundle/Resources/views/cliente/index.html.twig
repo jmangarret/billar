@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Clientes Lista</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>TipodDocumento</th>
+                <th>Documento</th>
+                <th>Nombre</th>
+                <th>Direccion</th>
+                <th>Telefono</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for cliente in clientes %}
+            {% set strTipoDocumento = "" %}
+            {% if cliente.tipoDocumento=="CC" %}
+                {% set strTipoDocumento = "Cedula de Ciudadania" %}
+            {% elseif cliente.tipoDocumento=="CE" %}
+                {% set strTipoDocumento = "Cedula de Extranjeria" %}
+            {% elseif cliente.tipoDocumento=="PP" %}
+                {% set strTipoDocumento = "Pasaporte" %}
+            {% elseif cliente.tipoDocumento=="RN" %}
+                {% set strTipoDocumento = "RUT/NIT" %}
+            {% else %}
+                {% set strTipoDocumento = "Cedula de Ciudadania" %}
+            {% endif %}
+            <tr>
+                <td><a href="{{ path('cliente_show', { 'id': cliente.id }) }}">{{ cliente.id }}</a></td>
+                <td>{{ strTipoDocumento }}</td>
+                <td>{{ cliente.documento }}</td>
+                <td>{{ cliente.nombre }}</td>
+                <td>{{ cliente.direccion }}</td>
+                <td>{{ cliente.telefono }}</td>
+                <td>{{ (cliente.status==1 ? 'Activo' : 'Inactivo') }}</td>
+                <td>
+                <button class="btn btn-info" onclick="location.href='{{ path('cliente_show', { 'id': cliente.id }) }}'">
+                    <i class="glyphicon glyphicon-eye-open"></i>
+                </button>
+                <button class="btn btn-danger" onclick="location.href='{{ path('cliente_edit', { 'id': cliente.id }) }}'">
+                    <i class="glyphicon glyphicon-pencil"></i>
+                </button>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <button class="btn btn-primary" onclick="location.href='{{ path('cliente_new') }}'">
+        Crear cliente
+    </button>
+{% endblock %}

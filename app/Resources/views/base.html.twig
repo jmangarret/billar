@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>{% block title %}Billar!{% endblock %}</title>
+        {% block stylesheets %}
+          
+          <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+          <link rel="stylesheet" href="{{ asset('css/estilos.css') }}" />
+
+        {% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+          {% if is_granted('ROLE_ADMIN') %}
+            <ul class="nav nav-pills nav-justified">
+              <li class="active"><a href="{{ path('billar_homepage') }}">Inicio</a></li>
+              <li><a href="{{ path('mesa_index') }}">Mesas</a></li>
+              <li><a href="{{ path('cuenta_index') }}">Cuentas</a></li>
+              <li><a href="{{ path('cliente_index') }}">Clientes</a></li>
+              <li><a href="{{ path('producto_index') }}">Productos</a></li>
+              <li><a href="{{ path('promocion_index') }}">Promociones</a></li>
+              <li><a href="{{ path('mesa_index') }}">Configuracion</a></li>
+              <li><a href="{{ path('logout') }}">Salir</a></li>
+            </ul>
+          {%endif%}
+        
+          {% if is_granted('ROLE_USER') %}
+            <ul class="nav nav-pills nav-justified">
+              <li class="active"><a href="{{ path('billar_homepage') }}">Inicio</a></li>
+              <li><a href="{{ path('billar_homepage') }}">Mesas Billar</a></li>
+              <li><a href="{{ path('billar_karaoke_index') }}">Mesas Karaoke</a></li>
+              <li><a href="{{ path('billar_homepage') }}">Mesas General</a></li>
+              <li><a href="{{ path('logout') }}">Salir</a></li>
+            </ul>
+        
+          {%endif%}
+
+        {% block body %}
+
+        {% endblock %}
+
+        {% block javascripts %}
+            <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+            <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <script type="text/javascript" src="{{ asset('js/commons.js') }}"></script>
+        {% endblock %}
+
+        {% block footer %}
+            
+        {% endblock %}        
+    </body>
+</html>

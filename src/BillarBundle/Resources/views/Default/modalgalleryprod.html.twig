@@ -1,0 +1,38 @@
+<div id="modalgallery" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg"  style="overflow-y:scroll; max-height:80%; ">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header bg-primary">
+        <button type="button" class="close" data-dismiss="modal">X</button>
+        <h4 class="modal-title">Productos</h4>
+        <div class="alert alert-info" style="display:none">
+            <strong>Exito!</strong> El producto se ha agregado a la cuenta.
+        </div>
+      </div>
+      <div class="modal-body">
+          <div class="row text-center text-lg-left">
+            {% for producto in productos %}
+              <div class="col-lg-3 col-md-4 col-xs-6 div-producto">
+                <form action="" name="form" id="form">
+                  <a href="#" class="producto-item">
+                    <i class="fa fa-beer fa-5x" aria-hidden="true"></i>
+                  </a>
+                  <div><h3><span class="label label-success">{{ producto.nombre }}</span></h3></div>
+                  <div><h4><span class="label label-info">{{ producto.valorVenta }}</span></h4></div>
+                  <div><input type="number" name="cantidad" value="1" style="width:40px"></div>
+                  <input type="hidden" name="idproducto"  id="idproducto" value="{{producto.id}}">
+                  <input type="hidden" name="precio"      id="precio"     value="{{producto.valorVenta}}">
+                  <input type="hidden" name="idcuenta"    id="idcuenta"   value="">
+                  <input type="hidden" name="idmesa"      id="idmesa"     value="">
+                </form>
+              </div>
+            {% endfor %}
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>

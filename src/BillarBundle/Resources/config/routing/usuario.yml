@@ -1,0 +1,24 @@
+usuario_index:
+    path:     /
+    defaults: { _controller: "BillarBundle:Usuario:index" }
+    methods:  GET
+
+usuario_show:
+    path:     /{id}/show
+    defaults: { _controller: "BillarBundle:Usuario:show" }
+    methods:  GET
+
+usuario_new:
+    path:     /new
+    defaults: { _controller: "BillarBundle:Usuario:new" }
+    methods:  [GET, POST]
+
+usuario_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BillarBundle:Usuario:edit" }
+    methods:  [GET, POST]
+
+usuario_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "BillarBundle:Usuario:delete" }
+    methods:  DELETE

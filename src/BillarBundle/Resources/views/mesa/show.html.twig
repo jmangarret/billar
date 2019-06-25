@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Mesa</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Nombre</th>
+                <td>{{ mesa.nombre }}</td>
+            </tr>
+            <tr>
+                <th>Tipo</th>
+                <td>{{ mesa.tipo }}</td>
+            </tr>
+            <tr>
+                <th>Status</th>
+                <td>{{ (mesa.status==1) ? 'Ocupada' : 'Disponible' }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <input type="button" value="Editar" class="btn btn-primary" onclick="location.href='{{ path('mesa_edit', { 'id': mesa.id }) }}'">
+    <input type="button" value="Cancelar" class="btn btn-danger" onclick="location.href='{{ path('mesa_index') }}'">
+
+{% endblock %}

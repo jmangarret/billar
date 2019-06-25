@@ -1,0 +1,4 @@
+billar:
+    resource: "@BillarBundle/Resources/config/routing.yml"
+    prefix:   /
+
